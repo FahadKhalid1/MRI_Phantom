@@ -1,7 +1,5 @@
 Generation of simple magnetic resonance imaging (MRI) using a Shepp-Logan Digital Phantom
 
-Use Python
-
 You can use functions and libraries for generating and presenting graphs and images
 
 Background: Among the most famous digital phantoms are based on a 2D one originally introduced by Shepp and Logan in 1974 (L. A. Shepp and B. F. Logan, "The Fourier reconstruction of a head section," IEEE Transactions on Nuclear Science, vol. NS-21, pp. 21- 43, 1974) and later extended to 3D by Shepp (L. A. Shepp, "Computerized tomography and nuclear magnetic resonance," J Comput Assist Tomogr, vol. 4, pp. 94-107, 1980.). Those phantoms were originally made to study reconstruction algorithms in Computed Tomography (CT) and then extended to MRI.
