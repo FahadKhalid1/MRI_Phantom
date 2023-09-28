@@ -1,26 +1,16 @@
-# Correcting the approach to handle paragraphs, tables, and images
+Generation of simple magnetic resonance imaging (MRI) using a Shepp-Logan Digital Phantom
 
-# Initialize markdown content
-markdown_content = ""
+Use Python
 
-# Extract and convert paragraphs to markdown
-for paragraph in doc.paragraphs:
-    markdown_content += paragraph.text + "\n\n"
+You can use functions and libraries for generating and presenting graphs and images
 
-# Extract and convert tables to markdown
-for table in doc.tables:
-    for row in table.rows:
-        row_content = "| "
-        for cell in row.cells:
-            row_content += cell.text + " | "
-        markdown_content += row_content + "\n"
+Background: Among the most famous digital phantoms are based on a 2D one originally introduced by Shepp and Logan in 1974 (L. A. Shepp and B. F. Logan, "The Fourier reconstruction of a head section," IEEE Transactions on Nuclear Science, vol. NS-21, pp. 21- 43, 1974) and later extended to 3D by Shepp (L. A. Shepp, "Computerized tomography and nuclear magnetic resonance," J Comput Assist Tomogr, vol. 4, pp. 94-107, 1980.). Those phantoms were originally made to study reconstruction algorithms in Computed Tomography (CT) and then extended to MRI.
 
-# Extract images (will save them and provide links)
-image_files = []
-for idx, shape in enumerate(doc.inline_shapes):
-    image_path = f"/mnt/data/extracted_image_{idx}.png"
-    shape.image.save(image_path)
-    image_files.append(image_path)
+...
 
-# Return the first few lines of markdown for review
-markdown_content[:500], image_files  # Displaying only the first few lines and the list of extracted images
+This figure shows a standard Shepp Logan phantom generated in Matlab with the phantom function. In Matlab the code we used was:
+
+<img width="159" alt="image" src="https://github.com/FahadKhalid1/MRI_Phantom/assets/22212834/f5e7a461-ca6c-48dd-8a92-478e96c49629">
+
+
+
